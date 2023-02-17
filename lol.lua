@@ -705,7 +705,12 @@ local EnAdd = function(Char)
     end
     
     
-	local Root = Char:WaitForChild("HumanoidRootPart")
+	local Root = Char:FindFirstChild("HumanoidRootPart")
+	
+	if (not Root) then
+		return
+	end
+	
 	Root.Size = Vector3.new(4,4,4)
 	Root.Transparency = 0.9
 	if Root then
