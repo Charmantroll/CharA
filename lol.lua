@@ -703,7 +703,7 @@ local EnAdd = function(Char)
     if Char == game.Players.LocalPlayer.Character then
         return
     end
-    
+    pcall(function()
     
 	local Root = Char:FindFirstChild("HumanoidRootPart")
 	
@@ -749,6 +749,7 @@ local EnAdd = function(Char)
 
 		end)
 	end
+			end)
 end
 
 game.Players.PlayerAdded:Connect(function(jugador)
