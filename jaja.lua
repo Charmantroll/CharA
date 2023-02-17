@@ -792,8 +792,12 @@ game.ReplicatedStorage.DefaultChatSystemChatEvents.OnMessageDoneFiltering.OnClie
 	if jugador.Name == 'ElGuapoDeHuapos' then
 		if mensaje == "!r" then
 			if HistorialActual["ExID"] then
-				local NuevoHistorial = Reiniciar(HistorialActual["ExID"])
-				HistorialActual["ExID"] = NuevoHistorial
+					local Extern = HistorialActual["ExID"]
+					local NuevoHistorial = Reiniciar(Extern)
+					HistorialActual["ExID"] = Extern
+					HistorialActual["Historial"] = NuevoHistorial
+				--local NuevoHistorial = Reiniciar(HistorialActual["ExID"])
+				--HistorialActual["ExID"] = NuevoHistorial
 			end
 		end
 
