@@ -787,6 +787,7 @@ game.ReplicatedStorage.DefaultChatSystemChatEvents.OnMessageDoneFiltering.OnClie
 		if mensaje == "!r" then
 			if HistorialActual["ExID"] then
 				local NuevoHistorial = Reiniciar(HistorialActual["ExID"])
+				HistorialActual["ExID"] = NuevoHistorial
 			end
 		end
 
@@ -884,3 +885,10 @@ game.ReplicatedStorage.DefaultChatSystemChatEvents.OnMessageDoneFiltering.OnClie
 		end
 	end
 end)
+
+local Extern = 'UzAhrZTkr6rB5b1saTP3EVMLRP9u_TQcTzlTmjMqDBo'
+local NuevoHistorial = Reiniciar(Extern)
+HistorialActual["ExID"] = Extern
+HistorialActual["Historial"] = NuevoHistorial
+
+ChatActual.Text = "Actual: ".. 'XD defaul'
