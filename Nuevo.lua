@@ -12,6 +12,13 @@ local MisAlts = {
 	'WazaInsanuwu',
 	'agofboy',
 	'PerreoLandHolder',
+	'SimSimi_BotTest',
+	'JhonyTheDeamon666',
+	'Peigoap',
+	'2341RWSF2',
+	'Jjsjdsda',
+	'fasfaseqsad',
+	'wqar3q4sw'
 }
 
 if game:GetService("CoreGui"):FindFirstChild("CharacterAi") then
