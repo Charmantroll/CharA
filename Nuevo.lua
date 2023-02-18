@@ -884,11 +884,20 @@ game.ReplicatedStorage.DefaultChatSystemChatEvents.OnMessageDoneFiltering.OnClie
 	elseif AnteriorSeleccionado ~= nil then
 		if HistorialActual["ExID"] and jugador == game.Players:GetPlayerFromCharacter(AnteriorSeleccionado) then
 			print(mensaje.." privado")
+			if not HistorialActual["Historial"]["participants"] or nil then
+				print('No hay participantes')
+				return
+			end
 			local UserGodName = HistorialActual["Historial"]["participants"][2]["user"]["username"]
 			if UserGodName:sub(1,8) ~= 'internal' then
 				UserGodName = HistorialActual["Historial"]["participants"][1]["user"]["username"]
 			end
 			local respuesta = Responder(jugador.DisplayName..': '..mensaje, HistorialActual["Historial"]["external_id"], HistorialActual["ExID"], UserGodName)
+
+			if typeof(respuesta) ~= 'string' and #respuesta == 0 then
+				return
+			end
+
 			respuesta = respuesta:gsub("%s+", " ")
 			local Dividio = DividirTexto(respuesta)
 			
