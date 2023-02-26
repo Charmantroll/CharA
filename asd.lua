@@ -21,7 +21,7 @@ local MisAlts = {
 	'wqar3q4sw',
 	'Ajunigiua',
 	'Jijosumae',
-	'Tremendinolsi,
+	'Tremendinolsi',
 	'WhenASuwea',
 	'WhenIrakssd',
 	'WhenJasdwqe',
