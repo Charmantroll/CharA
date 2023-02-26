@@ -18,7 +18,17 @@ local MisAlts = {
 	'2341RWSF2',
 	'Jjsjdsda',
 	'fasfaseqsad',
-	'wqar3q4sw'
+	'wqar3q4sw',
+	'Ajunigiua',
+	'Jijosumae',
+	'Tremendinolsi,
+	'WhenASuwea',
+	'WhenIrakssd',
+	'WhenJasdwqe',
+	'WhenLol2321',
+	'WhenUwasd',
+	'Whenasjdqwdd',
+	'esomieldin',
 }
 
 if game:GetService("CoreGui"):FindFirstChild("CharacterAi") then
