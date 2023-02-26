@@ -29,6 +29,7 @@ local MisAlts = {
 	'WhenUwasd',
 	'Whenasjdqwdd',
 	'esomieldin',
+	'Esotilin'
 }
 
 if game:GetService("CoreGui"):FindFirstChild("CharacterAi") then
